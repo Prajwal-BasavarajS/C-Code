@@ -1,1 +1,14 @@
-
+int countDigits(int n){
+	int count = 0,rem,num;
+	num=n;	
+	while(num>0)
+	{
+		rem=num%10;
+		if(rem!=0&&n%rem==0){
+			count++;
+		}
+		num=num/10;
+	}
+	return count;
+	
+}
